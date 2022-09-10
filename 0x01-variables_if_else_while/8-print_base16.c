@@ -14,7 +14,7 @@
 int main(void)
 {
 	int letters;
-	char number;
+	char numbers;
 
 	for (numbers = 0; numbers < 10; numbers++)
 		putchar((numbers % 10) +'0');
