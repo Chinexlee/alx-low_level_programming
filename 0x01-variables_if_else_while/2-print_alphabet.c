@@ -6,15 +6,15 @@
  * main - prints the program in lowercase followed
  * by a new line.
  *
- * Description: a program that prints the alphabet in 
+ * Description: a program that prints the alphabet in
  * lowercase, followed by a new line.
- * print: 0
+ * return: 0
  */
 int main(void)
 {
 	char letter;
 
-	for (letter = 'a'; letter <= 'z';letter++)
+	for (letter = 'a'; letter <= 'z'; letter++)
 		putchar(letter);
 
 	putchar('\n');
