@@ -6,7 +6,7 @@
  * main - a program that prints all single digit numbers
  * of base 10 starting from 0
  *
- * Description: a program that prints all single digit numbers of base 
+ * Description: a program that prints all single digit numbers of base
  * 10 starting
  *
  * Return: always equals to 0
