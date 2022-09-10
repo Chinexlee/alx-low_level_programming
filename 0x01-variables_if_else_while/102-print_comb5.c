@@ -10,6 +10,8 @@
  * The two numbers should be separated by a space
  * numbers should be printed with two digits.
  * combinations of numbers should be printed in ascending order
+ *
+ * Return: always equals 0
  */
 
 int main(void)
