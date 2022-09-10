@@ -12,7 +12,7 @@
  * Return: always equals to 0
  */
 
-main int(void)
+int main(void)
 {
 	int digit;
 
