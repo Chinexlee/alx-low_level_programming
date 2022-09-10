@@ -8,7 +8,7 @@
  *
  * Description: a program that prints the alphabet in
  * lowercase, followed by a new line.
- * return: 0
+ * Return: Always 0
  */
 int main(void)
 {
