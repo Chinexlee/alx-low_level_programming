@@ -6,7 +6,7 @@
  * main -  program that prints all single digit numbers of
  * base 10 starting from 0
  *
- * Description: char, printf and puts are not allowed
+ * Description : char, printf and puts are not allowed
  * making use of putchar
  *
  * Return: always equal to zero
