@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - a function that prints the alphabet, in lowercase,
+ * print_alphabet - a function that prints the alphabet, in lowercase,
  * followed by a new line.
  *
  * Description: print_alphabet will print a-z using putchar
