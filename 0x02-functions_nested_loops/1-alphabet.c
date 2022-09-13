@@ -4,8 +4,7 @@
  * main - a function that prints the alphabet, in lowercase,
  * followed by a new line.
  *
- * Description: a function that prints the alphabet, in lowercase,
- * followed by a new line.
+ * Description: print_alphabet will print a-z using putchar
  * Return: always equals to zero
  */
 
