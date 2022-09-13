@@ -1,5 +1,5 @@
-#ifndef _HOLBERTON_H_
-#define _HOLBERTON_H_
+#ifndef _main.h
+#define _main.h
 
 int _putchar(char c);
 void print_alphabet(void);
@@ -16,4 +16,4 @@ void print_to_98(int n);
 void num(int r, int n);
 void print_times_table(int n);
 
-#endif /* _HOLBERTON_H_ */
+#endif
