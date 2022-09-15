@@ -1,5 +1,12 @@
-#infdef main_h
-#define main_h
+#infdef MAIN_H
+#define MAIN_H
+
+/**
+ * main - header file for prototypes
+ * void prototype (void)
+ * int prototype (int)
+ * @c: integer
+ */
 
 int _putchar(char c);
 int _isupper(int c);
