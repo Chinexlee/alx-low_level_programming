@@ -23,9 +23,7 @@ int main(void)
 				printf('\n');
 			}
 			else
-			{
 				printf("Buzz ");
-			}
 		}
 		else if (h % 3 == 0)
 			printf("Fizz ");
@@ -35,4 +33,3 @@ int main(void)
 	}
 	return (0);
 }
-
