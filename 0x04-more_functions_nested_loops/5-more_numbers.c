@@ -17,7 +17,12 @@ void more_numbers(void)
 	{
 		for (j = 0; j <= 14; j++)
 		{
-			putchar(j);
+			if (n2 > 9)
+			{
+				putchar((n2 / 10) + '0');
+			}
+			putchar((n2 % 10) + '0');
 		}
-		putchar('\n');
+		putchar(10);
 	}
+}
