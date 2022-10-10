@@ -2,6 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ *print_dog - prints a struct dog
+ *@d: the struct to be printed
+ */
+
 void print_dog(struct dog *d);
 {
 	if (d != NULL)

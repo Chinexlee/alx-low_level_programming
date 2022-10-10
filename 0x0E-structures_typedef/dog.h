@@ -2,7 +2,7 @@
 #define DOG_H
 
 /**
- *dog - structthat list information of pet
+ *struct dog - structthat list information of pet
  *@name: pet name
  *@age: pet age
  *@owner: pet owner
@@ -15,7 +15,12 @@ struct dog
 	char *owner;
 };
 
+/**
+ *dog_t - Typedef for struct dog
+ */
+
 typedef struct dog dog_t;
+
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
