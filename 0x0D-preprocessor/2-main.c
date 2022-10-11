@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
- * main - main function
+/**
+ *main - check the code
  *
  * Return: Always 0
  */
