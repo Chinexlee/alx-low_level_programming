@@ -1,20 +1,25 @@
 #include "main.h"
 /**
- * set_bit - Entry Point
- * @n: input
- * @index: index
- * Return: 0
+ * set_bit - sets a bit to 1 at a given index
+ * @n: pointer to integer
+ * @index: index to set to 1
+ *
+ * Return: 1 if succeeded of -1 if failed
  */
+
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int bits;
+	unsigned long int size;
+	unsigned long int mask;
 
-	if (n == NULL)
+	size = sizeof(*n) * 8 - 1;
+
+	if (index > size)
 		return (-1);
 
-	bits = 1 << index;
+	mask = 1 << index;
 
-	*n = *n | bits;
+	*n = mask | *n;
 
 	return (1);
 }
