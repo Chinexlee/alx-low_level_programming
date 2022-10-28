@@ -1,12 +1,17 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * print_binary - Entry Point
- * @n: dec input
- * Return: 0
+ * print_binary - prints decimal as binary
+ * @n: long integer
  */
+
 void print_binary(unsigned long int n)
 {
-	int i = 0, count, k, temp;
+	signed long int size;
+	char c;
+	int flag;
+
+	size = sizeof(n) * 8 - 1;
 
 	if (n == 0)
 	{
@@ -14,20 +19,29 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	temp = n;
-
-	while (temp != 0)
+	if (n == 1)
 	{
-		i++;
-		temp = temp >> 1;
+		printf("1");
+		return;
 	}
 
-	for (count = i - 1; count >= 0; count--)
+	flag = 0;
+
+	while (size >= 0)
 	{
-		k = n >> count;
-		if (k & 1)
-			printf("1");
+		c = (n >> size) & 1;
+
+		if (flag == 1)
+			putchar(c + '0');
 		else
-			printf("0");
+		{
+			if (c == 1)
+			{
+				putchar(c + '0');
+				flag = 1;
+			}
+		}
+
+		size -= 1;
 	}
 }
