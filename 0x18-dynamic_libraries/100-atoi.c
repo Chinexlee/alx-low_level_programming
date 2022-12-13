@@ -1,20 +1,35 @@
 #include "main.h"
+
 /**
- * _atoi - convert string to numbers
+ * _atoi - function with one argument
+ * @s: char type pointer argument
  *
- * Return: n
+ * Description: convert a string to an integer
+ * Return: value of s
  */
-int _atoi(void)
+
+int _atoi(char *s)
 {
-	/* int x; */
-	/* char arr[]; */
+	int i, sign, numb;
 
-	/* while (*s) */
-	/* { */
-	/* x++; */
-	/* if (*s >= 48 && *s <= '9') */
-	/* conv[i] = *s */
-	/* } */
+	i = 0;
+	sign = 1;
+	numb = 0;
 
-	return (0);
+	while (s[i] != '\0')
+	{
+		if (s[i] == '-')
+			sign *= -1;
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			while (s[i] >= '0' && s[i] <= '9')
+			{
+				numb = (s[i] - '0') * sign + numb * 10;
+				i++;
+			}
+			break;
+		}
+		i++;
+	}
+	return (numb);
 }
